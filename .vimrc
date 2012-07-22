@@ -55,14 +55,6 @@ map <silent><Leader>/ :nohls<CR>
 map <Leader>[ :copen<CR>
 map <Leader>] :cclose<CR>
 map <Leader> :A<CR>
-
-" OmniCppComplete
-" au BufNewFile,BufRead,BufEnter *.cpp,*.cc,*.h,*.hpp set omnifunc=omni#cpp#complete#Main
-" let OmniCpp_SelectFirstItem = 2 " select first item (but don't insert)
-" let OmniCpp_NamespaceSearch = 1
-" let OmniCpp_GlobalScopeSearch = 1
-" let OmniCpp_ShowAccess = 1
-" let OmniCpp_ShowPrototypeInAbbr = 1 " show function parameters
 " automatically open and close the popup menu / preview window
 autocmd BufWritePost *.h,*.hpp,*.c,*.cpp,*.cxx,*.cc call g:ClangUpdateQuickFix()
 let g:clang_debug=1
